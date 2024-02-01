@@ -31,13 +31,19 @@ public class animController : MonoBehaviour
             if (Input.GetMouseButtonDown(1))
             {
                 anim1.SetTrigger("punchLeft");
-                
-            }
+
+        }
 
         if (Input.GetKeyDown(KeyCode.F))
         {
             anim1.SetTrigger("chargeUp");
-           
+
+        }
+
+        if (Input.GetKeyDown(KeyCode.LeftShift))
+        {
+            anim1.SetTrigger("finalPunch");
+
         }
     }
 }
