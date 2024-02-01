@@ -19,7 +19,7 @@ public class animController : MonoBehaviour
     {
          
         
-            if (Input.GetMouseButtonDown(0))
+            if (Input.GetMouseButtonDown(1))
             {
                 anim1.SetTrigger("punchRight");
                 
@@ -28,7 +28,7 @@ public class animController : MonoBehaviour
         
 
        
-            if (Input.GetMouseButtonDown(1))
+            if (Input.GetMouseButtonDown(0))
             {
                 anim1.SetTrigger("punchLeft");
 
