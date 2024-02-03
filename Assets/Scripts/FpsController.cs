@@ -48,4 +48,6 @@ public class FpsController : MonoBehaviour
             Debug.Log("Punch");
         }
     }
+
+   
 }

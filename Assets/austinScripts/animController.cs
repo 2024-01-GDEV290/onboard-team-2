@@ -5,7 +5,7 @@ using UnityEngine;
 public class animController : MonoBehaviour
 {
     Animator anim1;
-    public int punchNumber = 1;
+    
 
 
     // Start is called before the first frame update
