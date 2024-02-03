@@ -888,6 +888,7 @@ MonoBehaviour:
   phaseTwo: {fileID: 757031417}
   punch1: {fileID: 8300000, guid: de475ad109d8c8a45af42c7cd9e693e5, type: 3}
   crumble1: {fileID: 8300000, guid: f28dac39026f6c54d8dd12f2f4dc7a4e, type: 3}
+  crumble2: {fileID: 8300000, guid: 364ca49f9e1612840b7a2105c91ef198, type: 3}
 --- !u!65 &720920133
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1066,6 +1067,67 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1547167910}
   m_PrefabAsset: {fileID: 0}
+--- !u!65 &757031419
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 757031417}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &757031420
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 757031417}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &757031421
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 757031417}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb1f8b3fed3111146906180534757b2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boxGameObject: {fileID: 720920122}
 --- !u!1 &1008530708 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: c667a70fa07e3e645ab280fd791f455b,
@@ -1212,7 +1274,19 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 8e6f2415fe25ddd4d8d1efd47a57e574,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 757031420}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 8e6f2415fe25ddd4d8d1efd47a57e574,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 757031419}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 8e6f2415fe25ddd4d8d1efd47a57e574,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 757031421}
   m_SourcePrefab: {fileID: 100100000, guid: 8e6f2415fe25ddd4d8d1efd47a57e574, type: 3}
 --- !u!1001 &1595557165
 PrefabInstance:
@@ -11014,6 +11088,7 @@ MonoBehaviour:
   phaseTwo: {fileID: 757031417}
   punch1: {fileID: 8300000, guid: de475ad109d8c8a45af42c7cd9e693e5, type: 3}
   crumble1: {fileID: 8300000, guid: f28dac39026f6c54d8dd12f2f4dc7a4e, type: 3}
+  crumble2: {fileID: 8300000, guid: 364ca49f9e1612840b7a2105c91ef198, type: 3}
 --- !u!54 &1650705545
 Rigidbody:
   m_ObjectHideFlags: 0
