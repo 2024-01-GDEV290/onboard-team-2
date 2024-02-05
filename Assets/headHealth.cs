@@ -16,11 +16,11 @@ public class headHealth : MonoBehaviour
         hitCount = 0;
     }
 
-    void OnTriggerEnter(Collider head)
+    void OnTriggerEnter(Collider other)
     {
 
 
-        if (head.gameObject.name == "gloveLeft")
+        if (other.gameObject.name == "gloveLeft")
         {
             hitCount++;
 

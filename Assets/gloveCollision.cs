@@ -7,10 +7,18 @@ public class BoxingGloveCollision : MonoBehaviour
     public GameObject headShattered;
     public GameObject headBase;
     public GameObject phaseTwo;
+    public GameObject shardsOne;
+    public GameObject shardsTwo;
+    public GameObject shardsThree;
+    public GameObject phaseThree;
+    public GameObject PSLeft;
+    public GameObject PSRight;
     public AudioClip punch1;
     public AudioClip crumble1;
     public AudioClip crumble2;
     public AudioClip crumble3;
+    public AudioClip flameOn;
+    public AudioClip flameCrinkle;
     private AudioSource audioSource;
     public int hitCount = 0;
     
@@ -25,7 +33,7 @@ public class BoxingGloveCollision : MonoBehaviour
     {
         
 
-        if (other.gameObject.name == "headBase")
+        if (other.gameObject.tag == "glove")
         {
             hitCount++;
 
@@ -33,22 +41,32 @@ public class BoxingGloveCollision : MonoBehaviour
             {
                 audioSource.PlayOneShot(punch1);
                 audioSource.PlayOneShot(crumble1);
-                
+                phaseTwo.SetActive(true);
+                shardsOne.SetActive(true);
+                headBase.SetActive(false);
             }
 
             if (punch1 != null && audioSource != null && hitCount == 2)
             {
                 audioSource.PlayOneShot(punch1);
                 audioSource.PlayOneShot(crumble2);
-
+                /*audioSource.PlayOneShot(flameCrinkle);
+                audioSource.PlayOneShot(flameOn);
+                PSLeft.SetActive(true);
+                PSRight.SetActive(true);*/
+                phaseTwo.SetActive(false);
+                shardsTwo.SetActive(true);
+                phaseThree.SetActive(true);
+               
             }
 
             if (punch1 != null && audioSource != null && hitCount == 3)
             {
                 audioSource.PlayOneShot(punch1);
                 audioSource.PlayOneShot(crumble3);
-                headBase.SetActive(false);
-                headShattered.SetActive(true);
+                phaseThree.SetActive(false);
+                shardsThree.SetActive(true);
+
             }
 
         }
