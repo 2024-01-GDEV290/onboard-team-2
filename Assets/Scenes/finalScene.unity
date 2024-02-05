@@ -2749,7 +2749,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1063695102}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d6a33d179722f4c4bb6ec93ed893cfdc, type: 3}
+  m_Script: {fileID: 11500000, guid: 6019a6dccc4503e48879a4fb00cee033, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   headShattered: {fileID: 1770871226}
@@ -2759,14 +2759,14 @@ MonoBehaviour:
   shardsTwo: {fileID: 1869223332}
   shardsThree: {fileID: 1656859959}
   phaseThree: {fileID: 1333860538}
-  PSLeft: {fileID: 1606508366}
-  PSRight: {fileID: 1626239969}
+  PSLeft: {fileID: 0}
+  PSRight: {fileID: 0}
   punch1: {fileID: 8300000, guid: de475ad109d8c8a45af42c7cd9e693e5, type: 3}
   crumble1: {fileID: 8300000, guid: f28dac39026f6c54d8dd12f2f4dc7a4e, type: 3}
   crumble2: {fileID: 8300000, guid: 364ca49f9e1612840b7a2105c91ef198, type: 3}
   crumble3: {fileID: 8300000, guid: d062ab0bf523c7e438d3952c6dc116af, type: 3}
-  flameOn: {fileID: 8300000, guid: fc220485455a8f04086b5d6be5b69561, type: 3}
-  flameCrinkle: {fileID: 8300000, guid: b251b635dbdee6642a5eb9616254e50b, type: 3}
+  flameOn: {fileID: 0}
+  flameCrinkle: {fileID: 0}
   hitCount: 0
 --- !u!1 &1090722257
 GameObject:
@@ -13485,22 +13485,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6a33d179722f4c4bb6ec93ed893cfdc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  headShattered: {fileID: 0}
-  headBase: {fileID: 0}
-  phaseTwo: {fileID: 0}
-  shardsOne: {fileID: 0}
-  shardsTwo: {fileID: 0}
-  shardsThree: {fileID: 0}
-  phaseThree: {fileID: 0}
-  PSLeft: {fileID: 0}
-  PSRight: {fileID: 0}
-  punch1: {fileID: 8300000, guid: de475ad109d8c8a45af42c7cd9e693e5, type: 3}
-  crumble1: {fileID: 8300000, guid: f28dac39026f6c54d8dd12f2f4dc7a4e, type: 3}
-  crumble2: {fileID: 8300000, guid: 364ca49f9e1612840b7a2105c91ef198, type: 3}
-  crumble3: {fileID: 8300000, guid: d062ab0bf523c7e438d3952c6dc116af, type: 3}
-  flameOn: {fileID: 0}
-  flameCrinkle: {fileID: 0}
-  hitCount: 0
 --- !u!1 &1655014155 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -2855516976467648997, guid: 55b7079efcb9c0f4c8cbc0a96ec8f867,
@@ -13698,7 +13682,7 @@ PrefabInstance:
     - target: {fileID: 784392848339970510, guid: c6657096a2acaa341a1974ad86438ed6,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.8596821
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 784392848339970510, guid: c6657096a2acaa341a1974ad86438ed6,
         type: 3}
