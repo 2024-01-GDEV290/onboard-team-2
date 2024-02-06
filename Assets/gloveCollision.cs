@@ -20,12 +20,15 @@ public class BoxingGloveCollision : MonoBehaviour
     public AudioClip flameOn;
     public AudioClip flameCrinkle;
     private AudioSource audioSource;
+    
     public int hitCount = 0;
+    
     
 
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
+        
         hitCount = 0;
     }
 
@@ -66,6 +69,8 @@ public class BoxingGloveCollision : MonoBehaviour
                 audioSource.PlayOneShot(crumble3);
                 phaseThree.SetActive(false);
                 shardsThree.SetActive(true);
+                
+                
 
             }
 
